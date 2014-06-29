@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport", content="initial-scale=1.0, user-scalable=no")
+    //- script(type="text/javascript",src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6BWTvOfae-WnMorF26rkBApJqzPYy28M")
+    //- script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js")
+    //- script(src="/javascripts/backbone/backbone-min.js)
+    script(type="text/javascript",src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+    script(src='/javascripts/gmap.js')
+    link(rel='stylesheet', href='/stylesheets/stylesheet.css')
+    link(rel='stylesheet', href='/stylesheets/myStylesheet.css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src="http://documentcloud.github.com/backbone/backbone-min.js")
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/javascripts/holder.js')
+    link(href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css", rel="stylesheet")
+  body
+    //- span.glyphicon.glyphicon-search
+    
+    div.container
+        block content

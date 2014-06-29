@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    include common/menu
+    div#control
+        //- form(name="directions",onsubmit="calcRoute(start,end);",method="get")
+        strong Start:
+        input#start(type="text", onBlur="calcRoute(start,end);")
+        strong End:
+        input#end(type="text", onBlur="calcRoute(start,end);")
+        button(onclick="calcRoute(start,end);") Get Direction
+    div#map-canvas
+    div#directions-panel
